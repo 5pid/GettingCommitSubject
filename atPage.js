@@ -20,5 +20,5 @@ $(document).ready(function() {
 	chrome.extension.sendMessage({
 	    action: "getCommitSubject",
 	    source: getFullTitle()
-	});	
+	});
 });

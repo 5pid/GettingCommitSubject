@@ -1,17 +1,17 @@
 {
-	"manifest_version": 2,
+    "name": "bts_getter_title",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "get issue title with key",
 
-	"name": "bts_getter_title",
-	"description": "get issue title with key",
-	"version": "1.0",
-
-	"browser_action": {
-		"default_icon": "icon.png",
-		"default_popup": "popup.html",
-		"default_title": "Getting Commit Title at BTS"
-	},
-	"permissions": [
-		"tabs",
-		"<all_urls>"
-	]
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Getting Commit Title at BTS"
+    },
+    "permissions": [
+        "tabs",
+        "*://*/issues/*"
+    ],
+    "options_page": "setting.html"
 }
